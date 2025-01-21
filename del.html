@@ -135,11 +135,11 @@
                 } else {
                     const data = await response.json();
                     console.log(`data==>${data}`);
-                    alert(`Delete fail: ${data.msg || 'unknown error'}`);
+                    alert(`Delete fail: ${data.message || 'unknown error'}`);
                 }
             } catch (error) {
                 console.log(`data==>${JSON.stringify(error)}`);
-                alert('Delete fail: ' + error.msg);
+                alert('Delete fail: ' + error.message);
             }
         }
     </script>
