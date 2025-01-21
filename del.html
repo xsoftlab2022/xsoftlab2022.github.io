@@ -133,10 +133,12 @@
                     window.location.href = 'index.html';
                 } else {
                     const data = await response.json();
-                    alert(`Delete fail: ${data.message || 'unknown error'}`);
+                    console.log(`data==>${data}`);
+                    alert(`Delete fail: ${data.msg || 'unknown error'}`);
                 }
             } catch (error) {
-                alert('Delete fail: ' + error.message);
+                console.log(`data==>${JSON.stringify(error)}`);
+                alert('Delete fail: ' + error.msg);
             }
         }
     </script>
